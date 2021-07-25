@@ -8,7 +8,7 @@
   width: 50%;
   border: 3px solid #50394c;
   padding: 10px;
-  background-color: #f0f0f0;
+  background-color: #f9f5fdd8;
 }
 
 .main-contaner {
@@ -18,25 +18,32 @@
 input {
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
-    border: 2px solid #50394c;
-    color: #50394c;
+    border: 3px solid #3b2b39;
+    border-right: none;
+    /* color: #50394c; */
     width: 75%;
 }
 
 button { 
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
-    border: 2px solid #50394c;
-    color: #50394c;
-    background-color: #f4e1d2;
+    border: 3px solid #50394c;
+    background-color: #70466D;
     margin: 0;
     width: 25%;
+    font-weight: bold;
+    color: white
 }
 
-.h-container {
+/* .h-container {
     display: flex;
     justify-content: space-between;
-    justify-content: ;
+} */
+
+.container .h-container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
 }
 
 h3{
@@ -46,26 +53,38 @@ h3{
 .h-container span { 
     background-color: #50394c;
     height: 2px;
-    width: 40%;
+    width: 100%;
     margin-right: 0;
     margin-top: auto;
     margin-bottom: auto;
 }
 
 ul {
-    list-style: none;
-    padding-left: 0;
+    padding-left: 5px;
     margin-top: 10px;
 }
+
 
 li {
     margin-top: 10px;
     display: flex;
     justify-content: space-between;
+    /* display: list-item; */
+    margin: 0;
+	padding: 10px 0 10px 35px;
+	list-style: none;
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 30px;
+    font-weight: bold;
 }
 
-li span {
+#pending-list li {
+    background-image: url("loading.png");
+}
 
+#completed-list li {
+    background-image: url("checked.png");
 }
 
 li button {
